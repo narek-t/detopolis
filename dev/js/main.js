@@ -3,4 +3,8 @@ $(document).ready(function() {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 	});
+	$('.banners__slider').slick({
+		arrows: false,
+		dots: true,
+	});
 });

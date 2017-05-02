@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;amp;subset=cyrillic"/>
     <title>Document</title>
   </head>
-  <body>
+  <body class="home">
     <div class="all-wrapper">
       <header class="site-header">
         <div class="site-header__top">
@@ -74,6 +74,18 @@
         </div>
       </header>
       <main class="main-content">
+        <section class="banners__section">
+          <div style="background-image: url(img/banner-left.jpg)" class="banners__left banners__bg"></div>
+          <div style="background-image: url(img/banner-right.jpg)" class="banners__right banners__bg"></div>
+          <div class="container">
+            <div class="banners__inner">
+              <div class="banners__slider"><a href="#"><img src="img/b-img.png" alt=""/></a><a href="#"><img src="img/b-img.png" alt=""/></a><a href="#"><img src="img/b-img.png" alt=""/></a></div>
+              <div class="banners__static">
+                <h4 class="static__header">Подарочные сертификаты</h4><a href="#" class="btn with--arrow">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="hits slider__section">
           <div class="large-container">
             <h2 class="simple-title">Хиты продаж</h2>
@@ -328,7 +340,23 @@
           </div>
         </div>
       </div>
-      <div class="footer__bottom"></div>
+      <div class="footer__bottom">
+        <div class="container cf">
+          <ul class="footer__bottom-menu">
+            <li><a href="#">Главная </a></li>
+            <li><a href="#">Как мы работаем</a></li>
+            <li><a href="#">Условия оплаты и доставки</a></li>
+            <li><a href="#">О Детополисе</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="footer__bottom-socials"><span class="title">мы в соц. сетях</span>
+            <div class="socials"><a href="#" style="background-image: url(img/vk-ico.png)"></a><a href="#" style="background-image: url(img/inst-ico.png)"></a><a href="#" style="background-image: url(img/fb-ico.png)"></a><a href="#" style="background-image: url(img/gplus-ico.png)"></a></div>
+          </div>
+          <div class="footer__bottom-info">
+            <p class="footer__bottom-hour">Cлужба доставки: Пн-Вс с 9:00-18:00</p><a href="tel:8-800-222-1-541" class="footer__bottom-tel">8-800-222-1-541</a>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/lib/lib.min.js"></script>

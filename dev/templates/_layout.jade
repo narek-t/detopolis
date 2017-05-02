@@ -8,7 +8,8 @@ html(lang="en")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic")
 		title Document
 	
-	body
+	block vars
+	body(class='#{bodyClass}')
 		.all-wrapper
 			include _header
 

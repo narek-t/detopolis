@@ -1,6 +1,23 @@
 extends _layout
+block vars
+	- var bodyClass = 'home'
 block content
 	main.main-content
+		section.banners__section
+			.banners__left.banners__bg(style="background-image: url(img/banner-left.jpg)")
+			.banners__right.banners__bg(style="background-image: url(img/banner-right.jpg)")
+			.container
+				.banners__inner
+					.banners__slider
+						a(href="#")
+							img(src="img/b-img.png", alt="")
+						a(href="#")
+							img(src="img/b-img.png", alt="")
+						a(href="#")
+							img(src="img/b-img.png", alt="")
+					.banners__static
+						h4.static__header Подарочные сертификаты
+						a.btn.with--arrow(href="#") Подробнее
 		section.hits.slider__section
 			.large-container
 				h2.simple-title Хиты продаж
