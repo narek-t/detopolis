@@ -1,4 +1,51 @@
-$mainColor: #333;
-$fontFamily: Helvetica, Arial, sans-serif;
-$linkColor: #699;
-$bgColor: #f8f8f8;
+@font-face {
+	font-family: 'bs';
+	src: url('../fonts/blogger_sans-medium.woff2') format('woff2'),
+		url('../fonts/blogger_sans-medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'tangak';
+	src: url('../fonts/tangak.woff2') format('woff2'),
+		url('../fonts/tangak.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$bs: 'bs';
+$tangak: 'tangak';
+$os: 'Open Sans', sans-serif;
+
+.container {
+	max-width: 1140px;
+	padding: 0 10px;
+	margin: auto;
+}
+
+.large-container {
+	max-width: 1250px;
+	padding: 0;
+	margin: auto;
+}
+
+.btn {
+	height: 40px;
+	background-color: #f6b52d;
+	border: 1px solid white;
+	border-radius: 16px;
+	padding: 0 20px;
+	font: 700 14px/40px $os;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 0.05em;
+	transition: all .3s ease-in-out;
+	display: block;
+	&:hover {
+		background-color: #f37416;
+	}
+}
+
+.slick-slide, .slick-slide *{ outline: none !important; }
+
