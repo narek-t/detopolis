@@ -1,0 +1,291 @@
+extends _layout
+block vars
+	- var bodyClass = 'lk'
+block content
+	main.main-content
+		.lk-wrapper
+			.container
+				.lk__inner.cf
+					.pagination
+						a(href="#") Главная
+						span.sep  > 
+						span Личный кабинет
+					.cf
+						aside.lk__sidebar
+							a.lk__sidebar-tab.active-tab(href="#") Ваша учетная запись
+							a.lk__sidebar-tab(href="#") Адреса доставки
+							a.lk__sidebar-tab(href="#") Мои заказы
+							a.lk__sidebar-tab(href="#") Избранное
+						.lk__content-wrapper
+							.lk__content
+								h3.lk__content-heading ВАША УЧЕТНАЯ ЗАПИСЬ
+								form
+									.lk__form
+										.lk__form-row
+											.label-side
+												span Имя
+											.input-side
+												input.simple-input(type="text" placeholder="Инна")
+										.lk__form-row
+											.label-side
+												span Фамилия 
+											.input-side
+												input.simple-input(type="text" placeholder="Иванова")
+										.lk__form-row.radio-wrap
+											.label-side
+												span Пол 
+											.input-side
+												input(type="radio" name="sex" id="male")
+												label(for="male") Мужской
+												input(type="radio" name="sex" id="female")
+												label(for="female") Женский
+										.lk__form-row
+											.label-side
+												span Email 
+											.input-side
+												input.simple-input(type="text" placeholder="innaiva@mail.ru")
+										.lk__form-row
+											.label-side
+												span Телефон 
+											.input-side
+												input.simple-input(type="text" placeholder="+7 (930) 541-29-84")
+										.lk__form-row.agree-row
+											input(type="checkbox" id="agree")
+											label(for="agree") Подписаться на рассылку, чтобы получать информацию обо всех новинках, акциях и скидках
+										.lk__form-row.submit-row
+											a.change-pass.btn(href="#") Изменить пароль
+											input.btn.submit(type="submit" value="Подтвердить")
+							.lk__content
+								h3.lk__content-heading Адреса доставки
+								ol.delivery__addresses
+									li.delivery__address
+										.delivery__address-inner
+											span.address Инна Иванова, г. Нижний Новгород, ул. Белинского 142, кв. 41
+											.control-group
+												a.btn.edit-address(href="#") Редактировать
+												a.delete-address(href="#")
+									li.delivery__address
+										.delivery__address-inner
+											span.address Инна Иванова, г. Нижний Новгород, ул. Белинского 142, кв. 41
+											.control-group
+												a.btn.edit-address(href="#") Редактировать
+												a.delete-address(href="#")
+								a.btn.add-address(href="#") Добавить новый адрес
+							.lk__content
+								h3.lk__content-heading МОИ ЗАКАЗЫ
+								.order__list
+									.order__item
+										.order__item-short
+											table.order__item-short--table
+												tr
+													td
+														span.title № заказа:
+														span.description №188353244
+													td
+														span.title № заказа:
+														span.description 16.02.2017
+													td
+														span.title Получатель:
+														span.description Инна Иванова
+													td
+														span.title Сумма:
+														span.description 3245 руб.
+													td
+														span.title Статус:
+														span.description Доставлен
+											a.more-order-detail(href="#") подробнее
+										.order__item-full
+											p.heading Заказ №188353244
+											table.order__item-full--table
+												tr
+													th Товары:
+													th(style="width: 90px;") Кол-во
+													th(style="width: 90px;") Цена
+													th(style="width: 90px;") Всего
+												tr
+													td
+														a(href="#") Подгузники Pampers Sleepnplay (4-9 кг), 100 шт
+													td 2
+													td 1000 Руб
+													td 2000 Руб
+												tr
+													td
+														a(href="#") Подгузники Pampers Sleepnplay (4-9 кг), 100 шт
+													td 2
+													td 1000 Руб
+													td 2000 Руб
+												tr
+													td
+														a(href="#") Подгузники Pampers Sleepnplay (4-9 кг), 100 шт
+													td 2
+													td 1000 Руб
+													td 2000 Руб
+											table.order__item-full--table
+												tr
+													th Адрес доставки:
+													th Способ получения заказа:
+													th(style="width: 90px;") Всего
+												tr
+													td г. Нижний Новгород, ул. Белинского 142, кв. 41
+													td Курьером
+													td 250 руб. 
+											table.order__item-full--table.all-price--table
+												tr
+													td 
+														span.title Способ оплаты:
+														span.description Наличными курьеру
+													td 
+														span.all-price Итого: 
+														| 12 140 руб.
+									.order__item
+										.order__item-short
+											table.order__item-short--table
+												tr
+													td
+														span.title № заказа:
+														span.description №188353244
+													td
+														span.title № заказа:
+														span.description 16.02.2017
+													td
+														span.title Получатель:
+														span.description Инна Иванова
+													td
+														span.title Сумма:
+														span.description 3245 руб.
+													td
+														span.title Статус:
+														span.description Доставлен
+											a.more-order-detail(href="#") подробнее
+										.order__item-full
+											p.heading Заказ №188353244
+											table.order__item-full--table
+												tr
+													th Товары:
+													th(style="width: 90px;") Кол-во
+													th(style="width: 90px;") Цена
+													th(style="width: 90px;") Всего
+												tr
+													td
+														a(href="#") Подгузники Pampers Sleepnplay (4-9 кг), 100 шт
+													td 2
+													td 1000 Руб
+													td 2000 Руб
+												tr
+													td
+														a(href="#") Подгузники Pampers Sleepnplay (4-9 кг), 100 шт
+													td 2
+													td 1000 Руб
+													td 2000 Руб
+												tr
+													td
+														a(href="#") Подгузники Pampers Sleepnplay (4-9 кг), 100 шт
+													td 2
+													td 1000 Руб
+													td 2000 Руб
+											table.order__item-full--table
+												tr
+													th Адрес доставки:
+													th Способ получения заказа:
+													th(style="width: 90px;") Всего
+												tr
+													td г. Нижний Новгород, ул. Белинского 142, кв. 41
+													td Курьером
+													td 250 руб. 
+											table.order__item-full--table.all-price--table
+												tr
+													td 
+														span.title Способ оплаты:
+														span.description Наличными курьеру
+													td 
+														span.all-price Итого: 
+														| 12 140 руб.
+							.lk__content.active
+								h3.lk__content-heading Избранное
+								p.lk__content-subheading Добавляйте понравившиеся вещи в избранное, так они не потеряются и вы сможете приобрести их позже
+								.fav__list
+									.product__item
+										.img-wrapper
+											img(src="img/pr2.jpg", alt="")
+										a.title(href="#") Подгузники Pampers Sleepnplay (4-9 кг), 100 шт
+										.price__row.cf
+											.price__col
+												span.old-price 1220 руб.
+												span.actual-price 990 руб.
+											a.product-cart(href="#")
+										.view-more__row.cf
+											a.view-more(href="#") Подробнее
+											.rating__col
+									.product__item
+										.img-wrapper
+											img(src="img/pr2.jpg", alt="")
+										a.title(href="#") Подгузники Pampers Sleepnplay (4-9 кг), 100 шт
+										.price__row.cf
+											.price__col
+												span.old-price 1220 руб.
+												span.actual-price 990 руб.
+											a.product-cart(href="#")
+										.view-more__row.cf
+											a.view-more(href="#") Подробнее
+											.rating__col
+									.product__item
+										.img-wrapper
+											img(src="img/pr2.jpg", alt="")
+										a.title(href="#") Подгузники Pampers Sleepnplay (4-9 кг), 100 шт
+										.price__row.cf
+											.price__col
+												span.old-price 1220 руб.
+												span.actual-price 990 руб.
+											a.product-cart(href="#")
+										.view-more__row.cf
+											a.view-more(href="#") Подробнее
+											.rating__col
+									.product__item
+										.img-wrapper
+											img(src="img/pr2.jpg", alt="")
+										a.title(href="#") Подгузники Pampers Sleepnplay (4-9 кг), 100 шт
+										.price__row.cf
+											.price__col
+												span.old-price 1220 руб.
+												span.actual-price 990 руб.
+											a.product-cart(href="#")
+										.view-more__row.cf
+											a.view-more(href="#") Подробнее
+											.rating__col
+									.product__item
+										.img-wrapper
+											img(src="img/pr2.jpg", alt="")
+										a.title(href="#") Подгузники Pampers Sleepnplay (4-9 кг), 100 шт
+										.price__row.cf
+											.price__col
+												span.old-price 1220 руб.
+												span.actual-price 990 руб.
+											a.product-cart(href="#")
+										.view-more__row.cf
+											a.view-more(href="#") Подробнее
+											.rating__col
+									.product__item
+										.img-wrapper
+											img(src="img/pr2.jpg", alt="")
+										a.title(href="#") Подгузники Pampers Sleepnplay (4-9 кг), 100 шт
+										.price__row.cf
+											.price__col
+												span.old-price 1220 руб.
+												span.actual-price 990 руб.
+											a.product-cart(href="#")
+										.view-more__row.cf
+											a.view-more(href="#") Подробнее
+											.rating__col
+
+
+
+
+
+
+
+
+
+
+
+
+block inlineScripts
